@@ -1,7 +1,7 @@
 version: '3'
 services:
   bootstrap:
-    build: monitored-geth-client
+    build: geth-node
     restart: on-failure
     container_name: bootstrap
     hostname: bootstrap
