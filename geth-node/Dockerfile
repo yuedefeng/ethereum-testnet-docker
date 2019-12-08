@@ -1,6 +1,7 @@
 FROM ethereum/client-go
 
 RUN apk add --update git bash nodejs nodejs-npm perl
+RUN npm config set unsafe-perm true
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 RUN cd /root &&\
